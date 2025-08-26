@@ -289,6 +289,7 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+
 }
 
 .about-pic {
@@ -335,11 +336,21 @@ section {
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+#projects.experience-details-container {
+  /* display: flex;
+  justify-content:baseline;
+  flex-direction:column; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;  /* space between cards */
 }
+
+
+
+
+/* PROJECTS SECTION ONLY */
+
 
 .article-container {
   display: flex;
@@ -368,10 +379,11 @@ article .icon {
 }
 
 
-.experience-details-container{
+
+/* .experience-details-container{
   display: flex;
   align-items: center;
-}
+} */
 
 
 
